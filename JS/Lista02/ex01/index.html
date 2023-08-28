@@ -1,0 +1,30 @@
+<!--
+# Interpretação:
+O código irá pedir ao usuário que ele digite o seu nome completo e salvar em uma variável.
+Após isso, ele irá fazer o uso de um loop FOR para imprimir este nome 10 vezes na página, com quebra de linha e numeração de 1 à 10.
+-->
+<html>
+
+<head>
+    <title>Lista 02 - Exercício 1</title>
+    <script type="text/javascript">
+        nomePrimeiro = prompt("Qual o seu primeiro nome?");
+        sobrenome = prompt("Qual é seu sobrenome?");
+        N = prompt("Insira seu número favorito ;)");
+        cor = prompt("Qual é a sua cor favorita? :O");
+
+        for (i = 1; i <= N; i++) {
+            if (i % 2 == 0) {
+                document.write(`<p style="color: ${cor}">` + i + ` - ` + nomePrimeiro + ` ` + sobrenome + `</p>`);
+            }  else {
+                document.write(`<p style="color: black">` + i + ` - ` + nomePrimeiro + ` ` + sobrenome + `</p>`);
+            }
+        }
+            
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
