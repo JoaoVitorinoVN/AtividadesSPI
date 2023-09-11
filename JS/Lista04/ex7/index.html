@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 04 JSBásico - Exercício 07</title>
+    <script src="script.js"></script>
+    <style>
+        img {
+            width: 250px;
+            margin: auto;
+            display: flex;
+            background-image: radial-gradient(black, transparent 70%);
+        }
+        button {
+            padding: 20px 60px;
+            margin: 10px auto;
+            display: flex;
+            background-color: #90c69b6b;
+            border: 5px double #326334;
+        }
+
+        button:hover {
+            background-color: #90c69b;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        body {background-color: #9aa796;}
+    </style>
+</head>
+<body>
+    <img style="cursor: grab;"  id="dado" src="img/dadoGiro.gif" alt="dado" onclick="jogarDado();">
+    <button type="button" onclick="jogarDado();">Girar dado</button>
+
+</body>
+</html>

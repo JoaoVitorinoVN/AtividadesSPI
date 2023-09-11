@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 04 JSBásico - Exercício 08</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: #9aa796;
+        }
+
+        img {
+            width: 100px;
+            margin: 115px 60px 0px;
+        }
+
+        #blex {
+            transform: scaleX(-1);
+        }
+
+        button {
+            width: 100px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        div.container {
+            border: 15px ridge gray;
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            margin: auto;
+            height: 400px;
+            text-align: center;
+            background-color: rgb(48, 23, 23);
+        }
+        h1 {
+            text-shadow: 0px 5px 10px black;
+            color: white;
+            background-color: #0000008e;
+            font-family: monospace;
+            padding: 10px;
+        }
+        div {
+            width: 100%;
+        }
+
+        div.visor {
+            height: 100%;
+            background-image: url(img/background.png);
+            background-size: cover;
+            background-position: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="visor">
+            <h1 id="vitoria">Sibora!</h1>
+            <img id="alex" src="img/alex.png" alt="AlexKid" onclick="jogarDado();">
+            <img id="blex" src="img/blex.png" alt="BlexKid" onclick="jogarDado();">
+        </div>
+        <div>
+            <button type="button" onclick="jokempo(1);">Tesoura</button>
+            <button type="button" onclick="jokempo(2);">Pedra</button>
+            <button type="button" onclick="jokempo(3);">Papel</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
