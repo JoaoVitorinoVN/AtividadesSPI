@@ -11,4 +11,4 @@ for (i = 0; i < 5; i++) {
     x = Math.floor(Math.random() * balaio.length);
 ;
 }
-document.write(`<p>${balaio.splice(x - 1, 1)}</p>`)
+document.write(`${balaio.splice(x - 1, 1)}</p>`)
