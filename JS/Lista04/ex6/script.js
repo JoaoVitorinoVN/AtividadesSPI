@@ -4,11 +4,10 @@ for (i = 1; i <= 60; i++) {
     balaio.push(i);
 }
 
-
 x = Math.floor(Math.random() * balaio.length);
 for (i = 0; i < 5; i++) {
     document.write(`${balaio.splice(x, 1)} - `)
     x = Math.floor(Math.random() * balaio.length);
 ;
 }
-document.write(`${balaio.splice(x - 1, 1)}</p>`)
+document.write(`${balaio.splice(x - 1, 1)}`)
