@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basico: Lista 5 - 6</title>
+    <script src="scripts.js"></script>
+    <style>
+        input {
+            padding: 5px;
+            margin: auto;
+            font-style: italic;
+        }
+        table {
+            margin: auto;
+            text-align: center;
+        }
+        .op {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <td colspan="4"><h2>Calculadora</h2></p></td>
+        <tr>
+            <td colspan="2"><label for="val1">1º Valor:</label></td>
+            <td colspan="2"><input type="number" id="val1"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="val2">2º Valor:</label></td>
+            <td colspan="2"><input type="number" id="val2"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="button" value="+" class="op" onclick='calcular("soma");'>
+            <input type="button" value="-" class="op" onclick='calcular("subtracao");'>
+            <input type="button" value="x" class="op" onclick='calcular("multiplicacao");'>
+            <input type="button" value="/" class="op" onclick='calcular("divisao");'></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="result">Resultado:</label></td>
+            <td colspan="2"><input type="number" id="result"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

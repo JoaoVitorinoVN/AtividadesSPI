@@ -1,0 +1,23 @@
+input {
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    font-family: monospace;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+span {
+    color: red;
+    text-align: right;
+    padding: 5px;
+}
