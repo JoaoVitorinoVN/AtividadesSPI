@@ -12,7 +12,7 @@ function toClick() {
         document.getElementById("persona").src = "img/Nervoso.png";
         document.getElementById("texto").innerHTML = "Não me faça perder o meu tempo com suas brincadeirinhas arrogantes!";
     } else {
-        document.getElementById("persona").src = "img/Alegre.png";
+        document.getElementById("persona").src = "img/alegre.png";
         document.getElementById("texto").innerHTML = `Oh, prazer em te conhecer, ${texto.trim()}, seja bem-vindo!`;
 
     }
