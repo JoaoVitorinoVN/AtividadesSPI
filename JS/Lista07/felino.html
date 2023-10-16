@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Avaliativa - Jogo dos Felinos</title>
+    <link rel="stylesheet" href="CSS/styleFelino.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="IMG/gato01.gif" alt="Gato 1" onclick="gato01();">
+            <p>Clique em mim!</p>
+        </div>
+        <div>
+            <img src="IMG/gato02.gif" alt="Gato 2" style="cursor: grab;" onclick="gato02();">
+            <p>Clique em mim várias vezes!</p>
+            <p>Carinhos: <span id="carinhos">nº</span></p>
+        </div>
+        <div>
+            <img src="IMG/gato03.gif" alt="Gato 3" id="gato03" onmouseover="gato03();" onmouseout="gato03Out();">
+            <p>Passe o cursor sobre mim!</p>
+        </div>
+        <div>
+            <img src="IMG/gato04.gif" alt="Gato 4" onclick="gato04();" onmouseover="gato04();" onmouseout="gato04Out();">
+            <p id="gato04">lá lá lá lá lá!</p>
+        </div>
+        <div>
+            <img src="IMG/gato05.gif" alt="Gato 5" style="cursor: default;">
+            <button type="button" onclick="gato05();">Gerar número da sorte</button>
+            <input type="text">
+        </div>
+    </div>
+</body>
+<script src="JS/scriptFelino.js"></script>
+</html>
