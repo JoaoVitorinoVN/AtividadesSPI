@@ -7,5 +7,5 @@ document.write(`
     `);
 
 function redirect() {
-    window.location.href = "JVVN-AtividadesSPI/JS/Lista07/felino.html";
+    window.location.href = "/JVVN-AtividadesSPI/JS/Lista07/felino.html";
 }

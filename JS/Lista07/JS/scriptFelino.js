@@ -15,10 +15,10 @@ function gato02() {
 }
 
 function gato03() {
-    document.getElementById("gato03").src = "JVVN-AtividadesSPI/JS/Lista07/IMG/gato06.gif"
+    document.getElementById("gato03").src = "/JVVN-AtividadesSPI/JS/Lista07/IMG/gato06.gif"
 }
 function gato03Out() {
-    document.getElementById("gato03").src = "JVVN-AtividadesSPI/JS/Lista07/IMG/gato03.gif"
+    document.getElementById("gato03").src = "/JVVN-AtividadesSPI/JS/Lista07/IMG/gato03.gif"
 }
 
 function gato04() {
