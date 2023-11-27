@@ -8,18 +8,25 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <link rel="stylesheet" href="css/jAlertWifi.css">
 </head>
 
 <body>
 
     <header>
+        <div class="user">
+            <span class="material-symbols-outlined">account_circle</span>
+            <span class="user" id="user">N/A</span>
+            <button class="sair" id="logout"><span class="material-symbols-outlined">logout</span></button>
+        </div>
         <div>
             <label for="diff">Dificuldade:</label>
             <select name="Dificuldade" id="diff">
                 <option value="1">Fácil</option>
                 <option value="2">Médio</option>
                 <option value="3">Difícil</option>
-                <option value="4">Super Saiyajin</option>
+                <option value="4" style="color: rgb(99, 21, 21);">Hardcore</option>
             </select>
         </div>
 
@@ -35,6 +42,8 @@
 
     <main>
         <button id="numero" class="num">N/A</button>
+        <audio src="" id="music"></audio>
+        <audio src="" id="hit"></audio>
     </main>
 
 
@@ -42,8 +51,10 @@
         <p>Acertos: <span id="acerto">N/A</span> (<span id="porAcerto">N/A</span>%)</p>
         <p>Erros: <span id="erro">N/A</span></p>
         <p>Números pares sorteados: <span id="parSort">N/A</span></p>
+        <p>Pontuação máxima: <span id="highscore">N/A</span></p>
     </footer>
 
+    <script src="js/jAlertWifi.js"></script>
     <script src="js/script.js"></script>
 </body>
 

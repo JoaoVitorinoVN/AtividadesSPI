@@ -1,0 +1,28 @@
+@media screen and (max-width: 1020px) {
+    main button {
+        font-size: 40vw;
+    }
+    main {
+        height: 100vh;
+        padding-top: 10%;
+    }
+    header, footer {
+        z-index: 1;
+        position: fixed;
+        flex-direction: column;
+        height: 150px;
+        align-items: center;
+    }
+    header {
+        top: -80px;
+    }
+    footer {
+        bottom: -107px;
+    }
+    header:focus, header:hover {
+        top: 0px;
+    }
+    footer:focus, footer:hover {
+        bottom: 0px;
+    }
+}

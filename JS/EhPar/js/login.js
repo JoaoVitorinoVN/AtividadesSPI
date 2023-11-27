@@ -20,6 +20,7 @@ window.addEventListener("load", function () {
                 }
                 if (find) {
                     alertWifi("Logado com sucesso!", false, 0, "", 30, "index.html");
+                    localStorage.setItem("login", user);
                 } else {
                     alertWifi("Nome de usuário ou senha incorretos!", false, 0, "", 30, "");
                 }

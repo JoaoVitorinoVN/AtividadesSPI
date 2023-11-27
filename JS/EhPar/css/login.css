@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #232033;
+    background-color: rgb(32, 32, 32);
     color: white;
     text-align: center;
     height: 100vh;
@@ -19,10 +19,11 @@ body {
 }
 
 form {
+    background-color: #2320339c;
     margin: auto;
     width: fit-content;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -34,6 +35,28 @@ form * {
 input {
     padding: 5px;
     margin-bottom: 20px;
+}
+input[type="text"], input[type="password"] {
+    background-color: black;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 100ms;
+}
+input:focus {
+    transform: scale(1.1);
+}
+input[type="button"] {
+    background-color: #198c9b;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="button"]:hover {
+    background-color: #176d78;
 }
 h1 {
     padding: 10px;
