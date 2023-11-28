@@ -1,28 +1,41 @@
 @media screen and (max-width: 1020px) {
-    main button {
-        font-size: 40vw;
+    * {
+        font-size: 110%;
     }
+
+    main button {
+        font-size: 10vw;
+    }
+
     main {
         height: 100vh;
-        padding-top: 10%;
     }
-    header, footer {
+
+    header,
+    footer {
+        transition: 100ms;
         z-index: 1;
         position: fixed;
         flex-direction: column;
-        height: 150px;
+        height: 60vh;
         align-items: center;
     }
+
     header {
-        top: -80px;
+        top: -35vh;
     }
+
     footer {
-        bottom: -107px;
+        bottom: -40vh;
     }
-    header:focus, header:hover {
+
+    header:focus,
+    header:hover {
         top: 0px;
     }
-    footer:focus, footer:hover {
+
+    footer:focus,
+    footer:hover {
         bottom: 0px;
     }
 }

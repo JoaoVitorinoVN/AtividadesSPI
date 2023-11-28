@@ -1,0 +1,16 @@
+@media screen and (max-width: 1020px) {
+    form {
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    * {
+        font-size: 3vh;
+    }
+
+    h1 {
+        font-size: 8vh !important;
+    }
+}

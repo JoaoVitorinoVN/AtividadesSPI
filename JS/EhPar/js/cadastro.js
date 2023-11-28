@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
         var user = document.getElementById("user").value;
         var pass = document.getElementById("pass").value;
         var confPass = document.getElementById("confPass").value;
-
+        
 
         if (pass == confPass && pass != "" && user != "") {
             var objUsuario = { nome: user, senha: pass };

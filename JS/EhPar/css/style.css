@@ -6,12 +6,16 @@
     box-sizing: border-box;
     font-family: 'Play', sans-serif;
 }
+
 body {
     height: 100vh;
     background-size: cover;
+
+    user-select: none;
 }
 
-header, footer {
+header,
+footer {
     height: 10vh;
     width: 100vw;
     background-color: #232033;
@@ -21,6 +25,7 @@ header, footer {
     justify-content: space-evenly;
     align-items: center;
 }
+
 main {
     text-align: center;
     height: 80vh;
@@ -29,7 +34,8 @@ main {
     justify-content: center;
     align-items: center;
 }
-main button{
+
+main button {
     height: fit-content;
     width: fit-content;
     font-size: 40vh;
@@ -42,9 +48,11 @@ button {
     cursor: pointer;
     transition: 100ms;
 }
+
 button:hover {
     text-shadow: 0px 0px 10px #198c9b;
 }
+
 button:active {
     transform: scale(0.95);
 }
@@ -57,22 +65,28 @@ select {
     cursor: pointer;
     border-radius: 5px;
 }
+
 select:disabled {
     opacity: 0.6;
 }
+
 span {
     color: rgb(209, 209, 209);
 }
+
 button:disabled {
     opacity: 0.6;
 }
+
 .sair * {
     font-size: 20px;
     transition: 1000ms;
 }
+
 .sair:hover {
     text-shadow: 0px 0px 10px rgb(255, 6, 6);
 }
+
 .sair *:hover {
     color: red;
 }
@@ -86,6 +100,7 @@ div.user {
     border-radius: 5px;
     justify-content: space-between;
 }
+
 span.user {
     overflow: hidden;
     width: 80px;
@@ -94,21 +109,28 @@ span.user {
 .hardcore {
     background-image: url("../img/firebackground.gif") !important;
 }
-.hardcore main, .hardcore footer, .hardcore header {
+
+.hardcore main,
+.hardcore footer,
+.hardcore header {
     animation: hardcoreMode 5s infinite !important;
 }
+
 .hardcore main button {
     animation: hardcoreMain 10s infinite !important;
-} 
+}
+
 @keyframes hardcoreMode {
     0% {
-    background-color: rgba(98, 1, 1, 0.604);
+        background-color: rgba(98, 1, 1, 0.604);
     }
+
     50% {
-    background-color: transparent;
+        background-color: transparent;
     }
+
     100% {
-    background-color: rgba(98, 1, 1, 0.604);
+        background-color: rgba(98, 1, 1, 0.604);
     }
 }
 
@@ -117,19 +139,23 @@ span.user {
         transform: rotate(0deg) scale(1);
         opacity: 1;
     }
+
     25% {
         transform: rotate(30deg) scale(0.1);
     }
+
     50% {
         transform: rotate(0deg);
         opacity: 0;
     }
+
     75% {
         transform: rotate(-30deg) scale(1);
     }
+
     100% {
         transform: rotate(0deg);
         opacity: 1;
     }
-    
+
 }
