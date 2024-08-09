@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Front-End: Lista 04</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/listMovieView.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#"><img src="img/ifilmes.png" alt="ifilmes"></a>
+        </div>
+        
+        <ul>
+            <li><a href="#">Top 10</a></li>
+            <li><a href="https://www.themoviedb.org/">TMDB</a></li>
+            <li><a href="https://github.com/JoaoVitorinoVN/JVVN-AtividadesSPI">JVVN no GitHub</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <section class="catalogo" id="catalogo">
+
+            <div class="detalhesFilme" id="detalhesFilme">
+                <div>
+                    <h1 id="titulo">Bem vindo ao iFilmes!</h1>
+                    <h3 id="views">Veja detalhes dos filmes mais populares da TMDB nesta página!</h3>
+                    <h3 id="genero"></h3>
+                    <p id="descricao">Selecione qualquer filme abaixo para visualizar</p>
+                </div>
+                <img src="" id="backdrop" alt="">
+                
+            </div>
+
+            <div class="top10" id="listaTop10">
+                <div class="filme" onclick="selectmovie()">
+                    <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="Capa_Filme">
+                    <h4 id="titulo">Título</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+                <p>Código aberto disponível no repositório do <a href="https://github.com/JoaoVitorinoVN/JVVN-AtividadesSPI" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p>Ranking de filmes adquiridos no site da: <a href="https://www.themoviedb.org/">TMDB</a></p>
+                <p>Todos os direitos reservados</p>
+                <p><span>Lista 04 - Projeto Front-End</span></p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
