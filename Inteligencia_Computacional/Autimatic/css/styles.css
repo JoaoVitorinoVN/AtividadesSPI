@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --background-color: #373737;
+    --text-color: white;
+    --primary-color: #559166;
+    --secondary-color: azure;
+}
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+header h1 span {
+    font-size: 30%;
+    opacity: 0.5;
+}
+
+button {
+    border-radius: 0.3;
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:hover {
+    transform: scale(0.95);
+}
+button:active {
+    filter: brightness(1.5);
+}
+.generator {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #5591664d;
+}
+.tableView {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+table * {
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+th {
+    background-color: var(--primary-color);
+}
+td {
+    color: black;
+    background-color: var(--secondary-color);
+}
+
+section {
+    padding: 10px;
+    border-radius: 30px;
+    margin: 15px;
+}
+section:nth-child(2n) {
+    background-color: #00000033;
+}
