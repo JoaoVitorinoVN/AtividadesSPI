@@ -1,5 +1,13 @@
 const pop = [];
 
+fetch('../data/professores.json')
+  .then(response => response.json())
+  .then(data => {
+    const teachers = Object.values(data);
+    console.log(teachers);
+  })
+  .catch(erro => console.error('Erro ao carregar o JSON:', erro));
+
 for (let i = 0; i < 10; i++) {
   pop[i] = [];
   for (let j = 0; j < 100; j++) {
@@ -11,9 +19,7 @@ function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function generateClass() {
-  const teacher = generateRandomNumber(1, 10);
-  const subject = generateRandomNumber(1, 25);
+function generateClass(teacher) {
   return `P${teacher}-M${subject}`;
 }
 
@@ -28,8 +34,8 @@ function executeGeneration() {
 function doMapping() {
   const tables = document.querySelectorAll(".viewClasses table");
 
-  for (let periodo = 0; periodo < tables.length; periodo++) {
-    const table = tables[periodo];
+  for (let semester = 0; semester < tables.length; semester++) {
+    const table = tables[semester];
     const lines = table.querySelectorAll("tbody tr");
 
     for (let line = 0; line < lines.length; line++) {
@@ -37,7 +43,7 @@ function doMapping() {
 
       for (let column = 0; column < camps.length; column++) {
         const index = line * 5 + column;
-        const value = pop[periodo][index]; 
+        const value = pop[semester][index]; 
         camps[column].textContent = value;
       }
     }
