@@ -1,10 +1,10 @@
 const pop = [];
+var teachers = [];
 
 fetch('../data/professores.json')
   .then(response => response.json())
   .then(data => {
-    const teachers = Object.values(data);
-    console.log(teachers);
+    teachers = Object.values(data);
   })
   .catch(erro => console.error('Erro ao carregar o JSON:', erro));
 
@@ -19,8 +19,10 @@ function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function generateClass(teacher) {
-  return `P${teacher}-M${subject}`;
+function generateClass() {
+  const teacher = teachers[generateRandomNumber(0, 9)];
+  const subject = generateRandomNumber(1, 25);
+  return `${teacher}-M${subject}`;
 }
 
 function executeGeneration() {
