@@ -1,28 +1,12 @@
-const pop = [];
-var teachers = [];
+import { generateClass } from './tratamentoDados.js';
 
-fetch('../data/professores.json')
-  .then(response => response.json())
-  .then(data => {
-    teachers = Object.values(data);
-  })
-  .catch(erro => console.error('Erro ao carregar o JSON:', erro));
+const pop = [];
 
 for (let i = 0; i < 10; i++) {
   pop[i] = [];
   for (let j = 0; j < 100; j++) {
     pop[i][j] = 0;
   }
-}
-
-function generateRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function generateClass() {
-  const teacher = teachers[generateRandomNumber(0, 9)];
-  const subject = generateRandomNumber(1, 25);
-  return `${teacher}-M${subject}`;
 }
 
 function executeGeneration() {
