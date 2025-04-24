@@ -1,8 +1,7 @@
-import { createMatrix } from "./gerarMatriz.js";
+import { createMatrix, checkConflicts } from "./gerarMatriz.js";
 
 document.querySelector(".generator button").addEventListener("click", () => {
-  const matrix = createMatrix(); // gera nova matriz
-
+  const pop = createMatrix();
   const tables = document.querySelectorAll(".viewClasses table");
 
   tables.forEach((table, weekIndex) => {
@@ -13,16 +12,19 @@ document.querySelector(".generator button").addEventListener("click", () => {
       for (let time = 0; time < 4; time++) {
         const columnIndex = weekIndex * 20 + day * 4 + time;
 
-        let professorInfo = "Livre";
-        for (let professor = 0; professor < 10; professor++) {
-          if (matrix[professor][columnIndex] !== "Livre") {
-            professorInfo = matrix[professor][columnIndex];
+        let teacherInfo = "Livre";
+        for (let teacher = 0; teacher < 10; teacher++) {
+          if (pop[teacher][columnIndex] !== "Livre") {
+            teacherInfo = pop[teacher][columnIndex];
             break;
           }
         }
 
-        rows[time].children[day].textContent = professorInfo;
+        rows[time].children[day].textContent = teacherInfo;
       }
     }
   });
+
+  const conflicts = checkConflicts(pop);
+  console.log(`Conflitos detectados: ${conflicts}`);
 });
