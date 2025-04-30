@@ -11,7 +11,6 @@ Promise.all([
 
   document.querySelector(".generator button").addEventListener("click", () => {
     const matrix = createMatrix();
-    console.log(matrix);
   });
 })
 .catch(err => console.error("Erro ao carregar os dados:", err));
