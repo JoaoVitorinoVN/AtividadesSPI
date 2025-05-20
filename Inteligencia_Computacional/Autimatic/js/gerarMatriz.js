@@ -2,18 +2,18 @@ let teachers = [];
 let subjects = [];
 
 Promise.all([
-  fetch('Inteligencia_Computacional/Autimatic/data/professores.json').then(res => res.json()),
-  fetch('Inteligencia_Computacional/Autimatic/data/materias.json').then(res => res.json())
+  fetch('../data/professores.json').then(res => res.json()),
+  fetch('../data/materias.json').then(res => res.json())
 ])
-.then(([professoresData, materiasData]) => {
-  teachers = Object.values(professoresData);
-  subjects = Object.values(materiasData);
+  .then(([professoresData, materiasData]) => {
+    teachers = Object.values(professoresData);
+    subjects = Object.values(materiasData);
 
-  document.querySelector(".generator button").addEventListener("click", () => {
-    const matrix = createMatrix();
-  });
-})
-.catch(err => console.error("Erro ao carregar os dados:", err));
+    document.querySelector(".generator button").addEventListener("click", () => {
+      const matrix = createMatrix();
+    });
+  })
+  .catch(err => console.error("Erro ao carregar os dados massa:", err));
 
 
 function generateRandomNumber(min, max) {
@@ -28,7 +28,7 @@ export function createMatrix() {
     const subjectIndex = generateRandomNumber(0, subjects.length - 1);
     pop[t][i] = `${teachers[t]}: ${subjects[subjectIndex]}`;
   }
-  
+
   return pop;
 }
 
@@ -36,7 +36,7 @@ export function checkConflicts(pop) {
   const teacherConflicts = Array(10).fill(0);
 
   for (let time = 0; time < 20; time++) {
-    const co = {}; 
+    const co = {};
     for (let semester = 0; semester < 5; semester++) {
       const colIndex = semester * 20 + time;
       for (let teacher = 0; teacher < 10; teacher++) {
