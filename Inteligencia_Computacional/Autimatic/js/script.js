@@ -1,4 +1,5 @@
 import { createMatrix, checkConflicts } from "./gerarMatriz.js";
+import { selection } from "./selecao.js";
 
 document.querySelector(".generator button").addEventListener("click", () => {
   const pop = createMatrix();
@@ -26,5 +27,9 @@ document.querySelector(".generator button").addEventListener("click", () => {
   });
 
   const conflicts = checkConflicts(pop);
+  const [bestValue, randomValue] = selection(conflicts);
+
   console.log(`Conflitos detectados: ${conflicts}`);
+  console.log("Melhor:", bestValue);
+  console.log("Aleatório:", randomValue);
 });
