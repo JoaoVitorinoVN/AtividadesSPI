@@ -13,7 +13,7 @@ Promise.all([
       const matrix = createMatrix();
     });
   })
-  .catch(err => console.error("Erro ao carregar os dados massa:", err));
+  .catch(err => console.error("Erro ao carregar os dados:", err));
 
 
 function generateRandomNumber(min, max) {
