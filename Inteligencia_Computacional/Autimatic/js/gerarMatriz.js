@@ -2,8 +2,8 @@ let teachers = [];
 let subjects = [];
 
 Promise.all([
-  fetch('../data/professores.json').then(res => res.json()),
-  fetch('../data/materias.json').then(res => res.json())
+  fetch('Inteligencia_Computacional/Autimatic/data/professores.json').then(res => res.json()),
+  fetch('Inteligencia_Computacional/Autimatic/data/materias.json').then(res => res.json())
 ])
 .then(([professoresData, materiasData]) => {
   teachers = Object.values(professoresData);
